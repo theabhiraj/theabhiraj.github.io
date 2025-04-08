@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>app-ads.txt Viewer</title>
+  </head>
+  <body>
+    <h1>📄 app-ads.txt File</h1>
+    <pre id="ads-content">Loading...</pre>
+
+    <script>
+      fetch('app-ads.txt')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('ads-content').textContent = data;
+        })
+        .catch(err => {
+          document.getElementById('ads-content').textContent = 'Failed to load file.';
+        });
+    </script>
+  </body>
+</html>
