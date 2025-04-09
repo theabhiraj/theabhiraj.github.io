@@ -1,1 +1,340 @@
-google.com, pub-7624999264785512, DIRECT, f08c47fec0942fa0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhiraj's Projects</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="floating-element float1"></div>
+        <div class="floating-element float2"></div>
+        <div class="floating-element float3"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Abhiraj's Creative Universe</h1>
+                <p class="hero-subtitle">Developing innovative solutions and creating engaging experiences that push the boundaries of what's possible.</p>
+                <div class="hero-cta">
+                    <a href="https://theabhiraj.github.io/portfolio" class="btn">
+                        <i class="fas fa-user-circle"></i> Explore Portfolio
+                    </a>
+                    <button id="openAppModal" class="btn btn-outline">
+                        <i class="fas fa-gamepad"></i> Number Quest
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <h3>Let's Connect</h3>
+            <div class="social-links">
+                <a href="https://github.com/theabhiraj/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/theabhiraj" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/itheabhiraj" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/_AbhirajRathod" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/itheabhiraj" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://instagram.com/theabhirajrathod" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Abhiraj. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- App Modal -->
+    <div class="modal-overlay" id="appModalOverlay" aria-hidden="true"></div>
+    <div class="modal" id="appModal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modalTitle">Number Quest: Beat the Puzzle's Best Time</h2>
+            <button class="close-modal" id="closeAppModal" aria-label="Close modal" title="Close">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="app-info">
+                <div class="app-description">
+                    <h3>Challenge Your Mathematical Skills</h3>
+                    <p>Number Quest Puzzles is a dynamic sliding puzzle game with varying grid sizes and interactive tile movement. Test your strategy and speed to beat your best time!</p>
+                    
+                    <div class="app-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Dynamic Puzzles</h4>
+                                <p>Fresh challenges fetched from Firebase Realtime Database with multiple grid sizes from 2x2 to 7x7.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Unique Mechanics</h4>
+                                <p>Features a distinctive two-empty-space sliding mechanic, requiring thoughtful strategy to master.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-stopwatch" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Time Tracking</h4>
+                                <p>Challenge yourself to improve with built-in timer and best time record tracking per puzzle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="app-screenshots">
+                    <div class="device-tabs" role="tablist">
+                        <button class="device-tab active" role="tab" aria-selected="true" aria-controls="android-screenshots" id="android-tab">
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i> Phone View
+                        </button>
+                        <button class="device-tab" role="tab" aria-selected="false" aria-controls="tablet-screenshots" id="tablet-tab">
+                            <i class="fas fa-tablet-alt" aria-hidden="true"></i> Tablet View
+                        </button>
+                    </div>
+                    
+                    <div id="android-screenshots" class="screenshot-gallery" role="tabpanel" aria-labelledby="android-tab">
+                        <div class="screenshot-item">
+                            <button class="screenshot-button" onclick="openPreview(this)">
+                                <img src="./assests/android/splash_screen.jpg" alt="Splash Screen" class="screenshot" loading="lazy">
+                                <div class="screenshot-label">Splash Screen</div>
+                            </button>
+                        </div>
+                        <div class="screenshot-item">
+                            <button class="screenshot-button" onclick="openPreview(this)">
+                                <img src="./assests/android/home_screen.jpg" alt="Home Screen" class="screenshot" loading="lazy">
+                                <div class="screenshot-label">Home Screen</div>
+                            </button>
+                        </div>
+                        <div class="screenshot-item">
+                            <button class="screenshot-button" onclick="openPreview(this)">
+                                <img src="./assests/android/name_changes.jpg" alt="Name Changes" class="screenshot" loading="lazy">
+                                <div class="screenshot-label">Name Changes</div>
+                            </button>
+                        </div>
+                        <div class="screenshot-item">
+                            <button class="screenshot-button" onclick="openPreview(this)">
+                                <img src="./assests/android/puzzle_screen.jpg" alt="Puzzle Screen" class="screenshot" loading="lazy">
+                                <div class="screenshot-label">Puzzle Screen</div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="tablet-screenshots" class="screenshot-gallery" role="tabpanel" aria-labelledby="tablet-tab" style="display: none;">
+                        <div class="screenshot-item">
+                            <button class="screenshot-button" onclick="openPreview(this)">
+                                <img src="./assests/tablets/splash_screen.png" alt="Splash Screen - Tablet" class="screenshot" loading="lazy">
+                                <div class="screenshot-label">Splash Screen</div>
+                            </button>
+                        </div>
+                        <div class="screenshot-item">
+                            <button class="screenshot-button" onclick="openPreview(this)">
+                                <img src="./assests/tablets/home_screen.png" alt="Home Screen - Tablet" class="screenshot" loading="lazy">
+                                <div class="screenshot-label">Home Screen</div>
+                            </button>
+                        </div>
+                        <div class="screenshot-item">
+                            <button class="screenshot-button" onclick="openPreview(this)">
+                                <img src="./assests/tablets/name_changes.png" alt="Name Changes - Tablet" class="screenshot" loading="lazy">
+                                <div class="screenshot-label">Name Changes</div>
+                            </button>
+                        </div>
+                        <div class="screenshot-item">
+                            <button class="screenshot-button" onclick="openPreview(this)">
+                                <img src="./assests/tablets/puzzle_screen.png" alt="Puzzle Screen - Tablet" class="screenshot" loading="lazy">
+                                <div class="screenshot-label">Puzzle Screen</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="download-section">
+                <h3>Ready to challenge yourself?</h3>
+                <p>Number Quest Puzzles is an engaging sliding puzzle game that challenges your mind and reflexes with every move. Featuring multiple difficulty levels from Easy to Expert, it's perfect for casual players and puzzle aficionados alike.</p>
+                <a href="./assests/no_quest.apk" class="btn download-btn" download>
+                    <i class="fab fa-android" aria-hidden="true"></i> Download APK
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Screenshot Preview Modal -->
+    <div class="preview-modal" id="previewModal" role="dialog" aria-labelledby="previewTitle" aria-modal="true">
+        <div class="preview-content">
+            <button class="close-preview" id="closePreview" aria-label="Close preview" title="Close">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <h3 id="previewTitle" class="sr-only">Screenshot Preview</h3>
+            <img id="previewImg" src="" alt="Screenshot Preview" class="preview-img">
+            <div class="preview-navigation">
+                <button class="nav-btn prev" aria-label="Previous screenshot" onclick="navigatePreview(-1)">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="nav-btn next" aria-label="Next screenshot" onclick="navigatePreview(1)">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // App Modal
+        const appModal = document.getElementById('appModal');
+        const appModalOverlay = document.getElementById('appModalOverlay');
+        const openAppModal = document.getElementById('openAppModal');
+        const closeAppModal = document.getElementById('closeAppModal');
+        
+        // Device tabs
+        const deviceTabs = document.querySelectorAll('.device-tab');
+        const androidScreenshots = document.getElementById('android-screenshots');
+        const tabletScreenshots = document.getElementById('tablet-screenshots');
+        
+        // Preview Modal
+        const previewModal = document.getElementById('previewModal');
+        const previewImg = document.getElementById('previewImg');
+        const closePreview = document.getElementById('closePreview');
+        const screenshotButtons = document.querySelectorAll('.screenshot-button');
+        let currentPreviewIndex = 0;
+        let currentGallery = null;
+        
+        // Fixed modal opening function
+        openAppModal.addEventListener('click', () => {
+            appModalOverlay.classList.add('active');
+            appModal.style.display = 'block';
+            setTimeout(() => {
+                appModal.classList.add('active');
+            }, 50);
+            document.body.style.overflow = 'hidden';
+        });
+        
+        // Improved closing function
+        function closeModal() {
+            appModal.classList.remove('active');
+            setTimeout(() => {
+                appModalOverlay.classList.remove('active');
+                appModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }, 300);
+        }
+        
+        closeAppModal.addEventListener('click', closeModal);
+        appModalOverlay.addEventListener('click', closeModal);
+        
+        // Device tab switching with accessibility
+        deviceTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                deviceTabs.forEach(t => {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+                
+                const targetId = tab.getAttribute('aria-controls');
+                const targetPanel = document.getElementById(targetId);
+                
+                if (targetId === 'android-screenshots') {
+                    androidScreenshots.style.display = 'grid';
+                    tabletScreenshots.style.display = 'none';
+                } else {
+                    androidScreenshots.style.display = 'none';
+                    tabletScreenshots.style.display = 'grid';
+                }
+            });
+            
+            // Keyboard navigation for tabs
+            tab.addEventListener('keydown', (e) => {
+                const tabs = Array.from(deviceTabs);
+                const index = tabs.indexOf(tab);
+                
+                if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    const nextTab = tabs[(index + 1) % tabs.length];
+                    nextTab.click();
+                    nextTab.focus();
+                } else if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    const prevTab = tabs[(index - 1 + tabs.length) % tabs.length];
+                    prevTab.click();
+                    prevTab.focus();
+                }
+            });
+        });
+        
+        // Screenshot preview functionality
+        function openPreview(button) {
+            const img = button.querySelector('img');
+            const gallery = button.closest('.screenshot-gallery');
+            const buttons = Array.from(gallery.querySelectorAll('.screenshot-button'));
+            currentPreviewIndex = buttons.indexOf(button);
+            currentGallery = gallery;
+            
+            previewImg.src = img.src;
+            previewModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function navigatePreview(direction) {
+            if (!currentGallery) return;
+            
+            const buttons = Array.from(currentGallery.querySelectorAll('.screenshot-button'));
+            currentPreviewIndex = (currentPreviewIndex + direction + buttons.length) % buttons.length;
+            const newImg = buttons[currentPreviewIndex].querySelector('img');
+            previewImg.src = newImg.src;
+        }
+        
+        closePreview.addEventListener('click', () => {
+            previewModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        previewModal.addEventListener('click', (e) => {
+            if (e.target === previewModal) {
+                previewModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Keyboard navigation for preview
+        document.addEventListener('keydown', (e) => {
+            if (previewModal.classList.contains('active')) {
+                if (e.key === 'ArrowRight') {
+                    navigatePreview(1);
+                } else if (e.key === 'ArrowLeft') {
+                    navigatePreview(-1);
+                }
+            }
+            
+            if (e.key === 'Escape') {
+                if (appModal.classList.contains('active')) {
+                    closeModal();
+                }
+                if (previewModal.classList.contains('active')) {
+                    previewModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+        
+        // Image loading optimization
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.screenshot').forEach(img => {
+                img.loading = 'lazy';
+                img.onerror = function() {
+                    console.error('Failed to load image:', this.src);
+                    this.src = 'https://via.placeholder.com/300x600?text=Screenshot';
+                    this.classList.add('image-load-error');
+                };
+            });
+        });
+    </script>
+</body>
+</html>
