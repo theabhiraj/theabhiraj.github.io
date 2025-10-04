@@ -16,13 +16,25 @@
         <div class="floating-element float1"></div>
         <div class="floating-element float2"></div>
         <div class="floating-element float3"></div>
+        <div class="floating-element float4"></div>
+        <div class="floating-element float5"></div>
         
         <div class="noquests-container">
             <div class="hero-content">
-                <h1 class="noquests-title">Number Quest</h1>
+                <div class="badge-container">
+                    <span class="badge pulse">🎮 Puzzle Game</span>
+                    <span class="badge pulse">🧠 Brain Training</span>
+                </div>
+                <h1 class="noquests-title">
+                    <span class="title-word">Number</span>
+                    <span class="title-word">Quest</span>
+                </h1>
                 <p class="noquests-subtitle">Challenge Your Mathematical Skills with Dynamic Sliding Puzzles</p>
+                
+
+                
                 <div class="hero-cta">
-                    <a href="../assests/NoQuests.apk" class="btn download-btn" download>
+                    <a href="../assests/NoQuests.apk" class="btn download-btn pulse-btn" download>
                         <i class="fab fa-android"></i> Download APK
                     </a>
                     <a href="../index.html" class="btn btn-outline">
@@ -35,84 +47,221 @@
     
     <section class="noquests-content">
         <div class="container">
-            <h2>About Number Quest</h2>
-            <p>Number Quest Puzzles is a dynamic sliding puzzle game with varying grid sizes and interactive tile movement. Test your strategy and speed to beat your best time!</p>
+            <div class="section-header">
+                <span class="section-label">Discover</span>
+                <h2 class="section-title">About Number Quest</h2>
+                <p class="section-description">Number Quest Puzzles is a dynamic sliding puzzle game with varying grid sizes and interactive tile movement. Test your strategy and speed to beat your best time!</p>
+            </div>
             
             <div class="feature-grid">
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="feature-icon">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3>Dynamic Puzzles</h3>
                     <p>Fresh challenges fetched from Firebase Realtime Database with multiple grid sizes from 2x2 to 7x7.</p>
+                    <div class="feature-badge">Real-time Sync</div>
                 </div>
                 
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
                     <h3>Unique Mechanics</h3>
                     <p>Features a distinctive two-empty-space sliding mechanic, requiring thoughtful strategy to master.</p>
+                    <div class="feature-badge">Innovative</div>
                 </div>
                 
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">
                         <i class="fas fa-stopwatch"></i>
                     </div>
                     <h3>Time Tracking</h3>
                     <p>Challenge yourself to improve with built-in timer and best time record tracking per puzzle.</p>
+                    <div class="feature-badge">Compete</div>
                 </div>
             </div>
             
-            <h2>Game Features</h2>
-            <ul>
-                <li>Multiple difficulty levels (Easy to Expert)</li>
-                <li>Real-time progress tracking</li>
-                <li>Intuitive touch controls</li>
-                <li>Beautiful, responsive design</li>
-                <li>Offline gameplay capability</li>
-                <li>Regular puzzle updates</li>
-            </ul>
+            <div class="section-header">
+                <span class="section-label">Features</span>
+                <h2 class="section-title">Game Features</h2>
+            </div>
             
-            <h2>Screenshots</h2>
+            <div class="features-list-grid">
+                <div class="feature-list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Multiple difficulty levels (Easy to Expert)</span>
+                </div>
+                <div class="feature-list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Real-time progress tracking</span>
+                </div>
+                <div class="feature-list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Intuitive touch controls</span>
+                </div>
+                <div class="feature-list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Beautiful, responsive design</span>
+                </div>
+                <div class="feature-list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Offline gameplay capability</span>
+                </div>
+                <div class="feature-list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Regular puzzle updates</span>
+                </div>
+            </div>
+            
+            <div class="section-header">
+                <span class="section-label">Gallery</span>
+                <h2 class="section-title">Screenshots</h2>
+            </div>
+            
             <div class="screenshot-grid">
                 <div class="screenshot-item" data-label="Splash Screen">
                     <img src="../assests/android/no_quest/splash_screen.jpg" alt="Splash Screen" loading="lazy">
+                    <div class="screenshot-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="screenshot-item" data-label="Home Screen">
                     <img src="../assests/android/no_quest/home_screen.jpg" alt="Home Screen" loading="lazy">
+                    <div class="screenshot-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="screenshot-item" data-label="Name Changes">
                     <img src="../assests/android/no_quest/name_changes.jpg" alt="Name Changes" loading="lazy">
+                    <div class="screenshot-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="screenshot-item" data-label="Puzzle Screen">
                     <img src="../assests/android/no_quest/puzzle_screen.jpg" alt="Puzzle Screen" loading="lazy">
+                    <div class="screenshot-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
             </div>
+            
             <div class="download-section">
-                <h2>Ready to Challenge Yourself?</h2>
-                <p>Number Quest Puzzles is an engaging sliding puzzle game that challenges your mind and reflexes with every move. Featuring multiple difficulty levels from Easy to Expert, it's perfect for casual players and puzzle aficionados alike.</p>
-                <a href="../assests/NoQuests.apk" class="btn download-btn" download>
-                    <i class="fab fa-android"></i> Download APK Now
-                </a>
-                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                    File size: 46 MB | Android 8.0+
-                </p>
+                <div class="download-content">
+                    <h2>Ready to Challenge Yourself?</h2>
+                    <p>Number Quest Puzzles is an engaging sliding puzzle game that challenges your mind and reflexes with every move. Featuring multiple difficulty levels from Easy to Expert, it's perfect for casual players and puzzle aficionados alike.</p>
+                    <a href="../assests/NoQuests.apk" class="btn download-btn-large pulse-btn" download>
+                        <i class="fab fa-android"></i> Download APK Now
+                    </a>
+                    <div class="download-info">
+                        <span><i class="fas fa-file-archive"></i> File size: 46 MB</span>
+                        <span><i class="fab fa-android"></i> Android 8.0+</span>
+                        <span><i class="fas fa-shield-alt"></i> Secure Download</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <footer class="noquests-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Number Quest. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+                    <!-- <a href="#"><i class="fas fa-file-contract"></i> Terms</a> -->
+                    <a href="mailto:abhirajrathod90@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // Add some interactive elements
         document.addEventListener('DOMContentLoaded', function() {
-            // Add loading animation to images
+            // Image loading animation
             const images = document.querySelectorAll('img');
             images.forEach(img => {
                 img.addEventListener('load', function() {
                     this.style.opacity = '1';
                 });
                 img.style.opacity = '0';
-                img.style.transition = 'opacity 0.3s ease';
+                img.style.transition = 'opacity 0.5s ease';
+            });
+
+            // Animated counter for stats
+            const animateCounter = (element) => {
+                const target = parseInt(element.getAttribute('data-target'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        element.textContent = Math.floor(current) + '+';
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.textContent = target + '+';
+                    }
+                };
+
+                updateCounter();
+            };
+
+            // Intersection Observer for counters
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counters = entry.target.querySelectorAll('.stat-number[data-target]');
+                        counters.forEach(counter => {
+                            if (!counter.classList.contains('animated')) {
+                                counter.classList.add('animated');
+                                animateCounter(counter);
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            const statsRow = document.querySelector('.stats-row');
+            if (statsRow) {
+                observer.observe(statsRow);
+            }
+
+            // Staggered animation for feature cards
+            const featureCards = document.querySelectorAll('.feature-card');
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('animate-in');
+                        }, index * 100);
+                        cardObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            featureCards.forEach(card => {
+                cardObserver.observe(card);
+            });
+
+            // Parallax effect for floating elements
+            document.addEventListener('mousemove', (e) => {
+                const floatingElements = document.querySelectorAll('.floating-element');
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+
+                floatingElements.forEach((el, index) => {
+                    const speed = (index + 1) * 10;
+                    const x = (mouseX - 0.5) * speed;
+                    const y = (mouseY - 0.5) * speed;
+                    el.style.transform = `translate(${x}px, ${y}px)`;
+                });
             });
         });
     </script>
