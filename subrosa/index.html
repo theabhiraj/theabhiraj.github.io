@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subrosa Stories - AI-Powered Creative Storytelling</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="subrosa.css">
+</head>
+<body>
+    <a href="../index.html" class="btn back-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+    
+    <section class="subrosa-hero">
+        <div class="floating-element float1"></div>
+        <div class="floating-element float2"></div>
+        <div class="floating-element float3"></div>
+        
+        <div class="subrosa-container">
+            <div class="hero-content">
+                <h1 class="subrosa-title">Subrosa Stories</h1>
+                <p class="subrosa-subtitle">Unleash Your Creativity with AI-Powered Storytelling</p>
+                <div class="hero-cta">
+                    <a href="../assests/subrosa_stories.apk" class="btn download-btn" download>
+                        <i class="fab fa-android"></i> Download APK
+                    </a>
+                    <a href="../index.html" class="btn btn-outline">
+                        <i class="fas fa-home"></i> Back to Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="subrosa-content">
+        <div class="container">
+            <h2>About Subrosa Stories</h2>
+            <p>Subrosa Stories is a creative AI-powered story generation app built with Flutter that helps users create unique narratives across various genres, from Horror to Comedy and everything in between.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Multiple Narrative Styles</h3>
+                    <p>Choose from 8 different genres including Horror, Fantasy, Science Fiction, Romance, Mystery, Historical, Comedy, or Default for a unique storytelling experience every time.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Customizable Parameters</h3>
+                    <p>Fine-tune your story with adjustable creativity levels (0.1-1.0) and length options from short (~150 words) to long (~600 words) to suit your preference.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Export & Share Options</h3>
+                    <p>Save your stories as text files, export as professionally formatted PDFs, or share directly from the app with the integrated system share sheet.</p>
+                </div>
+            </div>
+            
+            <h2>App Features</h2>
+            <ul>
+                <li>8 different story genres to choose from</li>
+                <li>Adjustable creativity levels (0.1-1.0)</li>
+                <li>Customizable story length options</li>
+                <li>Story history and saving capabilities</li>
+                <li>Export to PDF and text formats</li>
+                <li>Integrated sharing functionality</li>
+                <li>Clean, intuitive Flutter interface</li>
+                <li>Google Gemini AI integration</li>
+            </ul>
+            
+            <h2>Screenshots</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot-item" data-label="Home Screen">
+                    <img src="../assests/android/subrosa_stories/home_screen.jpg" alt="Home Screen" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="API Setup">
+                    <img src="../assests/android/subrosa_stories/add_API.jpg" alt="API Setup" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="History Screen">
+                    <img src="../assests/android/subrosa_stories/history_screen.jpg" alt="History Screen" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="Settings Screen">
+                    <img src="../assests/android/subrosa_stories/seting_screen.jpg" alt="Settings Screen" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="download-section">
+                <h2>Ready to Create Your Own Stories?</h2>
+                <p>Subrosa Stories combines the power of Google's Gemini AI with an intuitive Flutter interface to help you generate unique, creative stories in seconds. With multiple narrative styles, customizable parameters, and easy export options, it's perfect for writers, students, or anyone who enjoys storytelling.</p>
+                <a href="../assests/subrosa_stories.apk" class="btn download-btn" download>
+                    <i class="fab fa-android"></i> Download APK Now
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    File size: 25 MB | Android 8.0+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add loading animation to images
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.style.opacity = '1';
+                });
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>

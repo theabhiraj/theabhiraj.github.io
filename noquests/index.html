@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Quest - Beat the Puzzle's Best Time</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="noquests.css">
+</head>
+<body>
+    <a href="../index.html" class="btn back-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+    
+    <section class="noquests-hero">
+        <div class="floating-element float1"></div>
+        <div class="floating-element float2"></div>
+        <div class="floating-element float3"></div>
+        
+        <div class="noquests-container">
+            <div class="hero-content">
+                <h1 class="noquests-title">Number Quest</h1>
+                <p class="noquests-subtitle">Challenge Your Mathematical Skills with Dynamic Sliding Puzzles</p>
+                <div class="hero-cta">
+                    <a href="../assests/NoQuests.apk" class="btn download-btn" download>
+                        <i class="fab fa-android"></i> Download APK
+                    </a>
+                    <a href="../index.html" class="btn btn-outline">
+                        <i class="fas fa-home"></i> Back to Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="noquests-content">
+        <div class="container">
+            <h2>About Number Quest</h2>
+            <p>Number Quest Puzzles is a dynamic sliding puzzle game with varying grid sizes and interactive tile movement. Test your strategy and speed to beat your best time!</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Dynamic Puzzles</h3>
+                    <p>Fresh challenges fetched from Firebase Realtime Database with multiple grid sizes from 2x2 to 7x7.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Unique Mechanics</h3>
+                    <p>Features a distinctive two-empty-space sliding mechanic, requiring thoughtful strategy to master.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <h3>Time Tracking</h3>
+                    <p>Challenge yourself to improve with built-in timer and best time record tracking per puzzle.</p>
+                </div>
+            </div>
+            
+            <h2>Game Features</h2>
+            <ul>
+                <li>Multiple difficulty levels (Easy to Expert)</li>
+                <li>Real-time progress tracking</li>
+                <li>Intuitive touch controls</li>
+                <li>Beautiful, responsive design</li>
+                <li>Offline gameplay capability</li>
+                <li>Regular puzzle updates</li>
+            </ul>
+            
+            <h2>Screenshots</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot-item" data-label="Splash Screen">
+                    <img src="../assests/android/no_quest/splash_screen.jpg" alt="Splash Screen" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="Home Screen">
+                    <img src="../assests/android/no_quest/home_screen.jpg" alt="Home Screen" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="Name Changes">
+                    <img src="../assests/android/no_quest/name_changes.jpg" alt="Name Changes" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="Puzzle Screen">
+                    <img src="../assests/android/no_quest/puzzle_screen.jpg" alt="Puzzle Screen" loading="lazy">
+                </div>
+            </div>
+            <div class="download-section">
+                <h2>Ready to Challenge Yourself?</h2>
+                <p>Number Quest Puzzles is an engaging sliding puzzle game that challenges your mind and reflexes with every move. Featuring multiple difficulty levels from Easy to Expert, it's perfect for casual players and puzzle aficionados alike.</p>
+                <a href="../assests/NoQuests.apk" class="btn download-btn" download>
+                    <i class="fab fa-android"></i> Download APK Now
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    File size: 46 MB | Android 8.0+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add loading animation to images
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.style.opacity = '1';
+                });
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>
