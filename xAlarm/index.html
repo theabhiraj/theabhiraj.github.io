@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="xalarm.css">
 </head>
+
 <body>
-    <a href="../index.html" class="btn back-home">
+    <a href="../index.html" class="back-home">
         <i class="fas fa-arrow-left"></i> Back to Home
     </a>
-    
+
     <section class="xalarm-hero">
         <div class="floating-element float1"></div>
         <div class="floating-element float2"></div>
         <div class="floating-element float3"></div>
-        
+
         <div class="xalarm-container">
             <div class="hero-content">
                 <h1 class="xalarm-title">xAlarm</h1>
@@ -32,38 +34,42 @@
             </div>
         </div>
     </section>
-    
+
     <section class="xalarm-content">
         <div class="container">
             <h2>About xAlarm</h2>
-            <p>xAlarm ensures you wake up on time, every time, with reliable alarm triggering and unique action-based dismissal methods to defeat even the heaviest sleeper.</p>
-            
+            <p>xAlarm ensures you wake up on time, every time, with reliable alarm triggering and unique action-based
+                dismissal methods to defeat even the heaviest sleeper.</p>
+
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-bell"></i>
                     </div>
                     <h3>Multiple Alarm Types</h3>
-                    <p>Create one-time alarms for special occasions or recurring alarms for specific days of the week, with independent customization options.</p>
+                    <p>Create one-time alarms for special occasions or recurring alarms for specific days of the week,
+                        with independent customization options.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-tasks"></i>
                     </div>
                     <h3>Smart Dismissal Actions</h3>
-                    <p>Choose from math problems, memory games, phone shaking, barcode scanning, photo capture, or physical activity to dismiss your alarm.</p>
+                    <p>Choose from math problems, memory games, phone shaking, barcode scanning, photo capture, or
+                        physical activity to dismiss your alarm.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Reliability Focused</h3>
-                    <p>Multiple fallback mechanisms ensure alarms trigger reliably even on devices with aggressive battery optimization.</p>
+                    <p>Multiple fallback mechanisms ensure alarms trigger reliably even on devices with aggressive
+                        battery optimization.</p>
                 </div>
             </div>
-            
+
             <h2>App Features</h2>
             <ul>
                 <li>One-time and recurring alarm options</li>
@@ -77,7 +83,7 @@
                 <li>Snooze functionality</li>
                 <li>Dark/Light theme support</li>
             </ul>
-            
+
             <h2>Screenshots</h2>
             <div class="screenshot-grid">
                 <div class="screenshot-item" data-label="Splash Screen">
@@ -100,11 +106,11 @@
 
     <script>
         // Add some interactive elements
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Add loading animation to images
             const images = document.querySelectorAll('img');
             images.forEach(img => {
-                img.addEventListener('load', function() {
+                img.addEventListener('load', function () {
                     this.style.opacity = '1';
                 });
                 img.style.opacity = '0';
@@ -113,4 +119,5 @@
         });
     </script>
 </body>
+
 </html>
