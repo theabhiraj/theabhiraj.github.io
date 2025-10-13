@@ -631,7 +631,7 @@ body {
 @media (max-width: 768px) {
     .ttkid-hero {
         padding: 60px 20px;
-        min-height: auto;
+        min-height: 100vh;
     }
 
     .hero-cta {
@@ -686,6 +686,7 @@ body {
 
     .ttkid-hero {
         padding: 40px 15px;
+        min-height: 100vh;
     }
 
     .ttkid-content {
