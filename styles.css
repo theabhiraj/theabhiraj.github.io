@@ -130,6 +130,9 @@ body {
     object-fit: contain;
     margin-right: 0.5rem;
     border-radius: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
 }
 
 .btn:hover {
