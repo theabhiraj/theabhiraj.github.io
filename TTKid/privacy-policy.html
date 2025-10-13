@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TTKid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, sans-serif;
+            line-height: 1.7;
+            color: #2C3E50;
+            background: linear-gradient(135deg, #FFD23F 0%, #FF6B35 50%, #00D9FF 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: white;
+            border: 5px solid #2C3E50;
+            border-radius: 30px;
+            box-shadow: 0 15px 0 rgba(0, 0, 0, 0.2), 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        header {
+            background: linear-gradient(135deg, #FF6B35 0%, #FFD23F 50%, #00D9FF 100%);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            margin: -40px -40px 40px -40px;
+            border-radius: 25px 25px 0 0;
+            border-bottom: 5px solid #2C3E50;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '🎨';
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.1;
+            top: -20px;
+            left: 20px;
+            transform: rotate(-15deg);
+        }
+
+        header::after {
+            content: '🎈';
+            position: absolute;
+            font-size: 80px;
+            opacity: 0.1;
+            bottom: -10px;
+            right: 30px;
+            transform: rotate(15deg);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2),
+                6px 6px 0px rgba(255, 210, 63, 0.3);
+            transform: rotate(-2deg);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            font-weight: 700;
+            background: white;
+            color: #FF6B35;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 20px;
+            border: 3px solid #2C3E50;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #FF6B35;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 4px solid #FFD23F;
+            padding-bottom: 12px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+            transform: rotate(-1deg);
+        }
+
+        h3 {
+            color: #00D9FF;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.4em;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-left: 35px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .highlight {
+            background-color: #FFD23F;
+            padding: 25px;
+            border: 4px solid #2C3E50;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+            transform: rotate(-1deg);
+        }
+
+        .highlight strong {
+            color: #FF6B35;
+            font-size: 1.2em;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #00D9FF 0%, #9B59B6 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 25px;
+            margin-top: 35px;
+            border: 4px solid #2C3E50;
+            box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info strong {
+            color: #FFD23F;
+        }
+
+        .contact-info a {
+            color: #FFD23F;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 25px;
+            background: #FFF9F0;
+            padding: 15px;
+            border-radius: 15px;
+            border: 3px solid #FFD23F;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 4px dashed #FFD23F;
+            color: #666;
+        }
+
+        footer p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .btn-website {
+            display: inline-block;
+            background: #FFD23F;
+            color: #2C3E50;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1.1em;
+            border: 4px solid #2C3E50;
+            box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.2s;
+            margin-top: 15px;
+        }
+
+        .btn-website:hover {
+            transform: translateY(3px);
+            box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .back-buttons {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: white;
+            color: #FF6B35;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 1em;
+            border: 4px solid #2C3E50;
+            box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.2s;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
+        }
+
+        .back-btn:hover {
+            transform: translateY(2px);
+            box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+            background: #FFD23F;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 25px;
+                border-width: 4px;
+            }
+
+            header {
+                padding: 35px 20px;
+                margin: -25px -25px 30px -25px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+                padding: 8px 20px;
+            }
+
+            .back-buttons {
+                margin-bottom: 15px;
+            }
+
+            .back-btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back-buttons">
+        <a href="index.html" class="back-btn">← Back to TTKid</a>
+        <a href="../index.html" class="back-btn">🏠 Home</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>🎓 TTKid</h1>
+            <p class="subtitle">Privacy Policy</p>
+        </header>
+
+        <p class="last-updated"><strong>Last Updated:</strong> January 10, 2025</p>
+
+        <div class="highlight">
+            <strong>Privacy First:</strong> TTKid is designed with children's privacy and safety as our top priority. We
+            do not collect, store, or share any personal information from our users.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            Welcome to TTKid, an educational learning app designed for toddlers aged 2-3 years. This Privacy Policy
+            explains how we handle information in our app. We are committed to protecting the privacy of children and
+            complying with applicable privacy laws, including the Children's Online Privacy Protection Act (COPPA).
+        </p>
+
+        <h2>2. Information We Do NOT Collect</h2>
+        <p>TTKid is designed to be completely private and safe for children. We do not collect any of the following:</p>
+        <ul>
+            <li>Personal identification information (names, addresses, email addresses, phone numbers)</li>
+            <li>Location data or GPS coordinates</li>
+            <li>Photos, videos, or audio recordings</li>
+            <li>Device identifiers or advertising IDs</li>
+            <li>Browsing history or app usage analytics</li>
+            <li>Contact lists or social media information</li>
+            <li>Payment or financial information</li>
+            <li>Any other personally identifiable information</li>
+        </ul>
+
+        <h2>3. Local Data Storage</h2>
+        <p>
+            TTKid stores minimal data locally on your device to enhance the learning experience. This data never leaves
+            your device and includes:
+        </p>
+        <ul>
+            <li><strong>Learning Progress:</strong> Tracks which letters, numbers, and animals your child has completed
+            </li>
+            <li><strong>Game Scores:</strong> Saves high scores and achievements in games</li>
+            <li><strong>App Settings:</strong> Stores preferences like sound volume and TTS settings</li>
+        </ul>
+        <p>
+            All this data is stored locally using the device's secure storage (SharedPreferences on Android,
+            UserDefaults on iOS) and can be deleted by uninstalling the app.
+        </p>
+
+        <h2>4. No Internet Connection Required</h2>
+        <p>
+            TTKid works completely offline. The app does not require an internet connection to function, and no data is
+            transmitted over the internet. All features, games, and learning content are available offline.
+        </p>
+
+        <h2>5. No Third-Party Services</h2>
+        <p>
+            TTKid does not integrate with any third-party services, including:
+        </p>
+        <ul>
+            <li>No analytics services (Google Analytics, Firebase, etc.)</li>
+            <li>No advertising networks</li>
+            <li>No social media integrations</li>
+            <li>No crash reporting services</li>
+            <li>No cloud storage services</li>
+        </ul>
+
+        <h2>6. Permissions</h2>
+        <p>
+            TTKid requests minimal permissions to function properly:
+        </p>
+
+        <h3>Android Permissions:</h3>
+        <ul>
+            <li><strong>Storage:</strong> To save learning progress and game data locally on your device</li>
+            <li><strong>Audio:</strong> To play educational sounds, music, and text-to-speech</li>
+        </ul>
+
+        <h3>iOS Permissions:</h3>
+        <ul>
+            <li><strong>Local Storage:</strong> To save app settings and progress</li>
+            <li><strong>Audio:</strong> To play sounds and enable text-to-speech features</li>
+        </ul>
+
+        <p>
+            These permissions are used solely for app functionality and do not enable any data collection or
+            transmission.
+        </p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>
+            TTKid is specifically designed for children aged 2-3 years. We take children's privacy extremely seriously:
+        </p>
+        <ul>
+            <li>No personal information is collected from children</li>
+            <li>No registration or account creation is required</li>
+            <li>No communication features (chat, messaging, etc.)</li>
+            <li>No external links or web browsers</li>
+            <li>No advertisements or in-app purchases</li>
+            <li>No social sharing features</li>
+        </ul>
+
+        <h2>8. Parental Control</h2>
+        <p>
+            Parents have complete control over the app:
+        </p>
+        <ul>
+            <li>All data is stored locally and can be deleted by uninstalling the app</li>
+            <li>No parental account or registration required</li>
+            <li>Settings can be adjusted at any time</li>
+            <li>Progress can be reset through the app settings</li>
+        </ul>
+
+        <h2>9. Data Security</h2>
+        <p>
+            Since TTKid does not collect or transmit any data, there is no risk of data breaches or unauthorized access
+            to personal information. All local data is protected by your device's built-in security features.
+        </p>
+
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last Updated"
+            date at the top of this policy. We encourage you to review this policy periodically. Continued use of the
+            app after changes constitutes acceptance of the updated policy.
+        </p>
+
+        <h2>11. Compliance</h2>
+        <p>
+            TTKid complies with:
+        </p>
+        <ul>
+            <li><strong>COPPA</strong> (Children's Online Privacy Protection Act) - USA</li>
+            <li><strong>GDPR</strong> (General Data Protection Regulation) - European Union</li>
+            <li><strong>CCPA</strong> (California Consumer Privacy Act) - California, USA</li>
+            <li>Other applicable children's privacy laws worldwide</li>
+        </ul>
+
+        <h2>12. Contact Us</h2>
+        <div class="contact-info">
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or TTKid's privacy
+                practices, please contact us:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:theabhiraj.in@gmail.com">theabhiraj.in@gmail.com</a><br>
+                <strong>App Name:</strong> TTKid<br>
+                <strong>Developer:</strong> TTKid Team
+            </p>
+            <p>
+                We will respond to all inquiries within 48 hours.
+            </p>
+            <p style="margin-top: 15px;">
+                <a href="https://theabhiraj.github.io/" target="_blank" class="btn-website">
+                    🌐 Visit Our Website
+                </a>
+            </p>
+        </div>
+
+        <h2>13. Your Rights</h2>
+        <p>
+            Since we do not collect any personal data, there is no data to access, modify, or delete from our servers.
+            However, you have the right to:
+        </p>
+        <ul>
+            <li>Delete all local app data by uninstalling TTKid</li>
+            <li>Reset progress through the app settings</li>
+            <li>Contact us with any privacy concerns</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Summary:</strong> TTKid is a completely private, offline educational app that does not collect,
+            store, or share any personal information. Your child's privacy and safety are our highest priorities.
+        </div>
+
+        <footer>
+            <p>&copy; 2025 TTKid. All rights reserved.</p>
+            <p>Made with ❤️ for little learners</p>
+        </footer>
+    </div>
+</body>
+
+</html>

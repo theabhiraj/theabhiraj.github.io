@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Subrosa Stories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #121212;
+            background: linear-gradient(135deg, #FF9933 0%, #FF5722 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .back-buttons {
+            margin: 0 0 20px 0;
+            padding: 0 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.95);
+            color: #FF9933;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1em;
+            border: 2px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 153, 51, 0.4);
+            background: white;
+            color: #E68A2E;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 40px 60px;
+            background-color: white;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #FF9933 0%, #FF5722 100%);
+            color: white;
+            padding: 50px 60px;
+            text-align: center;
+            margin: -40px -60px 40px -60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            z-index: 0;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            color: #E68A2E;
+            margin-top: 35px;
+            margin-bottom: 18px;
+            font-size: 1.9em;
+            border-bottom: 3px solid #FF9933;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #FF9933;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.4em;
+        }
+
+        p {
+            margin-bottom: 16px;
+            text-align: justify;
+            font-size: 1.05em;
+            color: #757575;
+        }
+
+        ul {
+            margin-left: 35px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+            color: #757575;
+        }
+
+        .highlight {
+            background: #FFF3E6;
+            padding: 20px;
+            border-left: 5px solid #FF9933;
+            border-radius: 12px;
+            margin: 25px 0;
+            border: 1px solid rgba(255, 153, 51, 0.2);
+        }
+
+        .highlight strong {
+            color: #E68A2E;
+            font-size: 1.15em;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #FF9933 0%, #FF5722 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 35px;
+            box-shadow: 0 8px 25px rgba(255, 153, 51, 0.3);
+        }
+
+        .contact-info strong {
+            color: #fff;
+        }
+
+        .contact-info a {
+            color: #FFD23F;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            color: white;
+        }
+
+        .last-updated {
+            color: #757575;
+            font-style: italic;
+            margin-bottom: 25px;
+            background: #FFFAF5;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #FF9933;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(255, 153, 51, 0.2);
+            color: #757575;
+        }
+
+        footer p {
+            font-size: 1.05em;
+            margin: 8px 0;
+        }
+
+        .btn-website {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 210, 63, 0.5);
+            background: white;
+            text-decoration: none;
+            display: inline-block;
+            background: #FFD23F;
+            color: #121212 !important;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1em;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            margin-top: 15px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-website:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 210, 63, 0.5);
+            background: white;
+            text-decoration: none;
+            display: inline-block;
+            background: #FFD23F;
+            color: #121212 !important;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1em;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            margin-top: 15px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                padding: 40px;
+            }
+
+            header {
+                padding: 50px 40px;
+                margin: -40px -40px 40px -40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 30px 25px;
+            }
+
+            header {
+                padding: 40px 25px;
+                margin: -30px -25px 30px -25px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .back-buttons {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 25px 20px;
+            }
+
+            header {
+                padding: 35px 20px;
+                margin: -25px -20px 30px -20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .back-buttons {
+                margin-bottom: 15px;
+                padding: 0 10px;
+            }
+
+            .back-btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back-buttons">
+        <a href="index.html" class="back-btn">← Back to Subrosa Stories</a>
+        <a href="../index.html" class="back-btn">🏠 Home</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>✨ Subrosa Stories</h1>
+            <p class="subtitle">Privacy Policy</p>
+        </header>
+
+        <p class="last-updated"><strong>Last Updated:</strong> January 10, 2025</p>
+
+        <div class="highlight">
+            <strong>Complete Privacy:</strong> Subrosa Stories is a client-side only app. The developer has NO access to
+            your data, NO backend servers, and NO data collection. You control everything - your API key, your stories,
+            your data.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            Welcome to Subrosa Stories, an AI-powered creative storytelling application. This Privacy Policy explains
+            how the app works and clarifies that <strong>the developer does not collect, access, or store any of your
+                data</strong>. Subrosa Stories is a completely client-side application with no backend infrastructure,
+            no user accounts, and no data transmission to the developer.
+        </p>
+
+        <h2>2. What the Developer Does NOT Collect</h2>
+        <p>
+            <strong>The developer of Subrosa Stories does not collect, access, receive, or store ANY of your
+                data.</strong> This includes:
+        </p>
+        <ul>
+            <li>Your Google Gemini API key</li>
+            <li>Your stories, prompts, or generated content</li>
+            <li>Your app settings or preferences</li>
+            <li>Your device information or identifiers</li>
+            <li>Usage analytics or statistics</li>
+            <li>Any personal information whatsoever</li>
+        </ul>
+
+        <h2>3. How the App Works (Client-Side Only)</h2>
+        <p>
+            Subrosa Stories operates entirely on your device:
+        </p>
+        <ul>
+            <li><strong>Your API Key:</strong> You obtain your own Google Gemini API key from Google. You enter it into
+                the app, and it's stored locally on your device only.</li>
+            <li><strong>Story Generation:</strong> When you create a story, your device communicates directly with
+                Google's Gemini API using YOUR API key. The developer is not involved in this process.</li>
+            <li><strong>Story Storage:</strong> All stories are saved locally on your device. They never leave your
+                device unless you explicitly export or share them.</li>
+            <li><strong>No Backend:</strong> There are no developer-owned servers, databases, or cloud services
+                involved.</li>
+        </ul>
+
+        <h2>4. How Your Data is Used (On Your Device Only)</h2>
+        <p>
+            All data processing happens locally on your device:
+        </p>
+        <ul>
+            <li>Your API key is used to authenticate with Google's Gemini API</li>
+            <li>Your stories are saved in your device's local storage</li>
+            <li>Your preferences are stored locally to remember your settings</li>
+            <li>Export and share features use your device's native capabilities</li>
+        </ul>
+        <p>
+            <strong>Important:</strong> The developer has no access to any of this data.
+        </p>
+
+        <h2>5. Data Storage (Local Only)</h2>
+        <p>
+            All data is stored exclusively on your device:
+        </p>
+        <ul>
+            <li><strong>API Key:</strong> Stored in encrypted local storage on your device</li>
+            <li><strong>Stories:</strong> Saved in your device's local database</li>
+            <li><strong>Settings:</strong> Stored in local preferences</li>
+            <li><strong>No Cloud Sync:</strong> Nothing is synced to any cloud or server</li>
+            <li><strong>No Developer Access:</strong> The developer cannot access your device's local storage</li>
+        </ul>
+
+        <h2>6. Communication with Google Gemini API</h2>
+        <p>
+            When you generate a story, the app communicates directly with Google's Gemini API:
+        </p>
+        <ul>
+            <li><strong>Direct Connection:</strong> Your device connects directly to Google's servers, not through any
+                developer-owned servers</li>
+            <li><strong>Your API Key:</strong> You use your own Google Gemini API key, which you obtain from Google</li>
+            <li><strong>Your Responsibility:</strong> You are responsible for your API key and any usage charges from
+                Google</li>
+            <li><strong>Google's Privacy Policy:</strong> Data sent to Google is subject to Google's Privacy Policy: <a
+                    href="https://ai.google.dev/gemini-api/terms" target="_blank"
+                    style="color: #667eea;">https://ai.google.dev/gemini-api/terms</a></li>
+            <li><strong>Developer Not Involved:</strong> The developer does not see, log, or store any of this
+                communication</li>
+        </ul>
+
+        <h2>7. No Third-Party Services (Except Google Gemini)</h2>
+        <p>
+            Subrosa Stories does not use any third-party services except for Google Gemini API (which YOU connect to
+            directly):
+        </p>
+        <ul>
+            <li>No analytics or tracking services</li>
+            <li>No advertising networks</li>
+            <li>No crash reporting services</li>
+            <li>No cloud storage or backup services</li>
+            <li>No social media integrations</li>
+            <li>No developer-owned backend or servers</li>
+        </ul>
+
+        <h2>8. Data Sharing</h2>
+        <p>
+            <strong>The developer does not share your data because the developer does not have access to your
+                data.</strong>
+        </p>
+        <p>
+            Your data is only shared when YOU choose to:
+        </p>
+        <ul>
+            <li>Send prompts to Google Gemini API (using your own API key)</li>
+            <li>Export stories as PDF or text files</li>
+            <li>Share stories using your device's share functionality</li>
+        </ul>
+        <p>
+            The developer is not involved in any of these actions.
+        </p>
+
+        <h2>9. Your Complete Control</h2>
+        <p>
+            You have 100% control over your data because everything is on your device:
+        </p>
+        <ul>
+            <li><strong>Your API Key:</strong> You obtain it from Google, you enter it, you can change or remove it
+                anytime</li>
+            <li><strong>Your Stories:</strong> Stored only on your device, delete them anytime</li>
+            <li><strong>Your Settings:</strong> Change or reset them anytime</li>
+            <li><strong>Complete Removal:</strong> Uninstall the app to remove all data from your device</li>
+            <li><strong>No Developer Involvement:</strong> The developer cannot access, view, or delete your data</li>
+        </ul>
+
+        <h2>12. Children's Privacy</h2>
+        <p>
+            Since the developer does not collect any data from anyone (including children), there is no children's data
+            to protect. However, parents should be aware that:
+        </p>
+        <ul>
+            <li>Users need to obtain their own Google Gemini API key</li>
+            <li>API usage may incur charges from Google</li>
+            <li>Generated content depends on user prompts and AI responses</li>
+        </ul>
+
+        <h2>10. Data Retention</h2>
+        <p>
+            Data is retained only on your device until you delete it:
+        </p>
+        <ul>
+            <li>Delete individual stories through the app</li>
+            <li>Clear all history from app settings</li>
+            <li>Uninstall the app to remove all data</li>
+            <li>Clear app data through device settings</li>
+        </ul>
+        <p>
+            <strong>The developer does not retain any data because the developer does not have access to any
+                data.</strong>
+        </p>
+
+        <h2>11. Security</h2>
+        <p>
+            Your data security depends on your device:
+        </p>
+        <ul>
+            <li>API keys are stored in encrypted local storage</li>
+            <li>Communication with Google uses HTTPS/TLS encryption</li>
+            <li>No data is sent to developer servers (because there are none)</li>
+            <li>Your device's security features protect your local data</li>
+            <li>Keep your device secure with a lock screen and regular updates</li>
+        </ul>
+
+        <h2>13. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time to reflect changes in our practices or for legal,
+            operational, or regulatory reasons. Any changes will be reflected in the "Last Updated" date at the top of
+            this policy. We encourage you to review this policy periodically.
+        </p>
+
+        <h2>14. International Users</h2>
+        <p>
+            Subrosa Stories can be used worldwide. However, please note that:
+        </p>
+        <ul>
+            <li>All data is stored locally on your device</li>
+            <li>API communications with Google Gemini are subject to Google's data handling practices</li>
+            <li>You are responsible for ensuring your use complies with local laws</li>
+        </ul>
+
+        <h2>15. Contact Us</h2>
+        <div class="contact-info">
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or Subrosa Stories'
+                privacy practices, please contact us:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:theabhiraj.in@gmail.com">theabhiraj.in@gmail.com</a><br>
+                <strong>App Name:</strong> Subrosa Stories<br>
+                <strong>Developer:</strong> Subrosa Stories Team
+            </p>
+            <p>
+                We will respond to all inquiries within 48 hours.
+            </p>
+            <p style="margin-top: 15px;">
+                <a href="https://theabhiraj.github.io/" target="_blank" class="btn-website" style="text-decoration: none !important;;">
+                    🌐 Visit Our Website
+                </a>
+            </p>
+        </div>
+
+        <h2>16. Consent</h2>
+        <p>
+            By using Subrosa Stories, you consent to this Privacy Policy and agree to its terms. If you do not agree
+            with this policy, please do not use the app.
+        </p>
+
+        <div class="highlight">
+            <strong>Summary:</strong> The developer of Subrosa Stories has ZERO access to your data. There are no
+            developer servers, no backend, no data collection, and no tracking. Everything happens on your device. You
+            get your own API key from Google, you create stories, you store them locally. The developer is simply not
+            involved in your data at all.
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Subrosa Stories. All rights reserved.</p>
+            <p>Empowering creativity through AI ✨</p>
+        </footer>
+    </div>
+</body>
+
+</html>

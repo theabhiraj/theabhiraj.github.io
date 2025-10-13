@@ -124,6 +124,14 @@ body {
     font-size: 1.1rem;
 }
 
+.btn-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+    border-radius: 25%;
+}
+
 .btn:hover {
     background-color: var(--saffron-lighter);
     transform: translateY(-2px);
