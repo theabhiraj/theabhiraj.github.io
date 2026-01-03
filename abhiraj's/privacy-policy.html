@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Abhiraj Portfolio & Dev Tools</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #673AB7;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #512DA8;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            border-left: 4px solid #673AB7;
+        }
+        
+        a {
+            color: #673AB7;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: January 3, 2026</p>
+        
+        <p>This Privacy Policy describes how Abhiraj Portfolio & Dev Tools ("we", "our", or "the app") collects, uses, and protects your information when you use our mobile application.</p>
+        
+        <h2>1. Information We Collect</h2>
+        <p>Our app collects minimal information to provide its services:</p>
+        <ul>
+            <li><strong>User Authentication:</strong> We use Supabase for secure email/password authentication. Only your email address and encrypted password are stored on Supabase servers. Your email must be verified before full app access. Authentication data is used solely for account security and session management.</li>
+            <li><strong>Project Data:</strong> We use Firebase Realtime Database to store and display portfolio projects. This data is publicly accessible and does not contain personal information.</li>
+            <li><strong>Syllabus Data:</strong> We use Firebase Realtime Database to store and display MCS (Master of Computer Science) syllabus information including courses, semesters, subjects, units, topics, and case studies. This educational content is publicly accessible.</li>
+            <li><strong>Local Storage:</strong> The app uses local storage (SharedPreferences) to cache project data, syllabus content, and user preferences. This data remains on your device and is never transmitted to external servers.</li>
+            <li><strong>Calculator History:</strong> Calculation history is stored locally using Hive database (up to 100 recent calculations). This data remains on your device only.</li>
+            <li><strong>Files:</strong> When you use the HTML/CSS/JS editor, Markdown editor, or Web Viewer download feature, files are saved locally to your device's Download folder. We do not access or transmit these files.</li>
+            <li><strong>User Preferences:</strong> Settings such as default tab selection are stored locally on your device using SharedPreferences.</li>
+        </ul>
+        
+        <h2>2. How We Use Information</h2>
+        <p>The information collected is used solely for:</p>
+        <ul>
+            <li>Authenticating users and managing secure login sessions via Supabase</li>
+            <li>Verifying user email addresses for account security</li>
+            <li>Displaying portfolio projects from Firebase</li>
+            <li>Displaying MCS syllabus content including educational materials, topics, and case studies</li>
+            <li>Caching data for offline functionality and instant app startup</li>
+            <li>Storing calculator history locally for your convenience</li>
+            <li>Providing seamless offline access to syllabus content for studying without internet</li>
+            <li>Saving your created files (HTML/CSS/JS exports, Markdown files, downloaded files) to your device</li>
+            <li>Providing web browsing functionality through the integrated WebView</li>
+            <li>Remembering your app preferences and settings</li>
+        </ul>
+        
+        <h2>3. Data Storage and Security</h2>
+        <ul>
+            <li><strong>Supabase:</strong> User authentication data (email and encrypted password) are stored securely on Supabase servers. Supabase uses industry-standard encryption and security practices. We recommend using a strong, unique password for your account.</li>
+            <li><strong>Firebase:</strong> Project data and syllabus content are stored in Firebase Realtime Database with standard security measures. All data is read-only for app users.</li>
+            <li><strong>Local Storage:</strong> Cached data (projects, syllabus, preferences, calculator history) are stored locally on your device using SharedPreferences and Hive database, and are not transmitted to any server. This enables offline functionality and instant loading.</li>
+            <li><strong>Downloaded Files:</strong> All files you download or create are stored in your device's Download/Abhiraj folder and remain under your control.</li>
+            <li><strong>Image Caching:</strong> Images from syllabus content are automatically cached by Flutter's built-in image cache for offline viewing and faster loading.</li>
+        </ul>
+        
+        <h2>4. Third-Party Services</h2>
+        <p>Our app uses the following third-party services:</p>
+        <ul>
+            <li><strong>Supabase:</strong> For user authentication and email verification. Supabase's privacy policy applies to authentication data. User accounts are required only for accessing the full app functionality.</li>
+            <li><strong>Firebase:</strong> For storing and retrieving portfolio project data and MCS syllabus content. Firebase's privacy policy applies to this data. All data is publicly accessible and read-only.</li>
+            <li><strong>WebView:</strong> The integrated web browser may access websites that have their own privacy policies. We do not track or store your browsing history.</li>
+            <li><strong>Image Hosting Services:</strong> Syllabus content may include images hosted on third-party services (e.g., Unsplash, Imgur). These services have their own privacy policies.</li>
+        </ul>
+        
+        <h2>5. Permissions</h2>
+        <p>The app requests the following permissions:</p>
+        <ul>
+            <li><strong>Internet Access:</strong> Required for Firebase data sync, web browsing, and downloading files.</li>
+            <li><strong>Storage Access:</strong> Required to save HTML/CSS/JS exports and downloaded files to your device.</li>
+        </ul>
+        
+        <h2>6. Data Sharing</h2>
+        <p>We do not sell, trade, or share your personal information with third parties. The app does not collect personal data beyond what is necessary for its functionality.</p>
+        
+        <h2>7. Children's Privacy</h2>
+        <p>Our app is suitable for all ages. We do not knowingly collect personal information from children beyond what is necessary for authentication and app functionality. Email verification is required for account creation. Parents or guardians should monitor their children's use of the app.</p>
+        
+        <h2>8. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Create, access, and manage your user account via Supabase authentication</li>
+            <li>Request password changes or account recovery at any time</li>
+            <li>Request deletion of your account and associated authentication data by contacting us</li>
+            <li>Clear cached data (projects, syllabus) through your device settings or by reinstalling the app</li>
+            <li>Use the app's pull-to-refresh feature to update cached content</li>
+            <li>Delete downloaded files from your device storage</li>
+            <li>Modify app preferences and settings at any time</li>
+            <li>Uninstall the app at any time, which removes all locally stored data</li>
+        </ul>
+        
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected with an updated "Last Updated" date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+        
+        <h2>10. Analytics and Tracking</h2>
+        <p>Our app does not use analytics, tracking, or advertising services. We do not collect usage statistics or behavioral data.</p>
+        
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:theabhiraj.in@gmail.com">theabhiraj.in@gmail.com</a><br>
+                <strong>GitHub:</strong> <a href="https://github.com/theabhiraj" target="_blank">github.com/theabhiraj</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

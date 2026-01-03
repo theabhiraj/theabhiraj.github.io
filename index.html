@@ -6,59 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhiraj's Projects</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <section class="hero">
-        <div class="floating-element float1"></div>
-        <div class="floating-element float2"></div>
-        <div class="floating-element float3"></div>
+        <div class="hero-bg"></div>
+
+        <div class="floating-orb orb1"></div>
+        <div class="floating-orb orb2"></div>
+        <!--  -->
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <div class="floating-shape shape4"></div>
+
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
 
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Abhiraj's Creative Universe</h1>
-                <p class="hero-subtitle">Developing innovative solutions and creating engaging experiences that push the
-                    boundaries of what's possible.</p>
-                <div class="hero-cta">
-                    <a href="https://theabhiraj.github.io/portfolio" class="btn">
-                        <i class="fas fa-user-circle"></i> Explore Portfolio
+                <!-- <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Developer & Creator</span>
+                </div> -->
+                <h1 class="hero-title">Abhiraj's Universe</h1>
+                <div class="social-links" style="padding-top: 2rem;">
+                    <a href="https://theabhiraj.github.io/portfolio" class="social-btn portfolio">
+                        <i class="fas fa-user-circle"></i>
+                        <span>View Portfolio</span>
                     </a>
-                    <a href="noquests/index.html" class="btn btn-outline">
-                        <img src="assests/logo/No_Quest.png" alt="Number Quest" class="btn-logo"> Number Quest
+                    <a href="https://github.com/theabhiraj" class="social-btn github">
+                        <i class="fab fa-github"></i>
+                        <!-- <span>GitHub</span> -->
                     </a>
-                    <a href="myTube/index.html" class="btn btn-outline">
-                        <img src="assests/logo/myTube.png" alt="myTube" class="btn-logo"> myTube
-                    </a>
-                    <a href="TTKid/index.html" class="btn btn-outline">
-                        <img src="assests/logo/ttkid.png" alt="TTKid" class="btn-logo"> TTKid
-                    </a>
-                    <a href="subrosa/index.html" class="btn btn-outline">
-                        <img src="assests/logo/Subrosa_Icon.png" alt="Subrosa Stories" class="btn-logo"> Subrosa Stories
-                    </a>
-                    <a href="xAlarm/index.html" class="btn btn-outline">
-                        <img src="assests/logo/xAlarm.png" alt="xAlarm" class="btn-logo"> xAlarm
-                    </a>
-                    <a href="https://github.com/theabhiraj" class="btn" style="background-color: black; color: white;">
-                        <i class="fab fa-github"></i> Github
-                    </a>
-                    <a href="https://instagram.com/theabhirajrathod" class="btn"
-                        style="background-color: #ff5e00; color: white;">
-                        <i class="fab fa-instagram"></i> Instagram
+                    <a href="https://instagram.com/theabhirajrathod" class="social-btn instagram">
+                        <i class="fab fa-instagram"></i>
+                        <!-- <span>Instagram</span> -->
                     </a>
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+        <!-- <div class="scroll-indicator" id="scrollIndicator">
+            <i class="fas fa-chevron-down"></i>
+        </div> -->
     </section>
 
+    <section class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <!-- <p class="section-subtitle">Explore my latest creations</p> -->
+            </div>
+            <div class="projects-grid">
+                <a href="abhiraj's/index.html" class="project-card">
+                    <img src="assests/logo/Abhiraj's.JPG" alt="Abhiraj's" class="project-icon">
+                    <h3 class="project-name">Abhiraj's</s></h3>
+                    <i class="fas fa-arrow-right project-arrow"></i>
+                </a>
+                <a href="myTube/index.html" class="project-card">
+                    <img src="assests/logo/myTube.png" alt="myTube" class="project-icon">
+                    <h3 class="project-name">myTube</h3>
+                    <i class="fas fa-arrow-right project-arrow"></i>
+                </a>
+                <a href="TTKid/index.html" class="project-card">
+                    <img src="assests/logo/ttkid.png" alt="TTKid" class="project-icon">
+                    <h3 class="project-name">TTKid</h3>
+                    <i class="fas fa-arrow-right project-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="social-section">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://theabhiraj.github.io/portfolio" class="social-btn portfolio">
+                    <i class="fas fa-user-circle"></i>
+                    <span>View Portfolio</span>
+                </a>
+                <a href="https://github.com/theabhiraj" class="social-btn github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://instagram.com/theabhirajrathod" class="social-btn instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="archived-toggle">
+        <button class="toggle-btn" onclick="toggleArchived()">
+            <i class="fas fa-archive"></i>
+            <span id="toggleText">Show Archived Projects</span>
+        </button>
+    </div>
+
+    <div class="archived-section" id="archivedSection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Archived Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <a href="xAlarm/index.html" class="project-card">
+                    <img src="assests/logo/xAlarm.png" alt="xAlarm" class="project-icon">
+                    <h3 class="project-name">xAlarm</h3>
+                    <i class="fas fa-arrow-right project-arrow"></i>
+                </a>
+                <a href="subrosa/index.html" class="project-card">
+                    <img src="assests/logo/Subrosa_Icon.png" alt="Subrosa Stories" class="project-icon">
+                    <h3 class="project-name">Subrosa Stories</h3>
+                    <i class="fas fa-arrow-right project-arrow"></i>
+                </a>
+                <a href="myTube/index.html" class="project-card">
+                    <img src="assests/logo/myTube.png" alt="myTube" class="project-icon">
+                    <h3 class="project-name">myTube</h3>
+                    <i class="fas fa-arrow-right project-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Abhiraj. Crafted with passion and code.</p>
+        </div>
+    </footer>
+
     <script>
-        // Simple script to handle any additional interactions if needed
-        document.addEventListener('DOMContentLoaded', function () {
-            console.log('Portfolio loaded successfully!');
-        });
+        function toggleArchived() {
+            const section = document.getElementById('archivedSection');
+            const text = document.getElementById('toggleText');
+
+            if (section.classList.contains('show')) {
+                section.classList.remove('show');
+                text.textContent = 'Show Archived Projects';
+            } else {
+                section.classList.add('show');
+                text.textContent = 'Hide Archived Projects';
+            }
+        }
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2064714832861202"
-     crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhiraj's Portfolio & Dev Tools</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --saffron: #FF9933;
+            --saffron-dark: #E68A2E;
+            --saffron-light: #FFF3E6;
+            --saffron-lighter: #FFFAF5;
+            --dark: #121212;
+            --light: #ffffff;
+            --gray: #757575;
+            --radius: 12px;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--saffron-lighter);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Hero Section */
+        .abhiraj-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--saffron) 0%, #FF5722 100%);
+        }
+
+        .abhiraj-hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 153, 51, 0.15) 0%, rgba(255, 153, 51, 0) 70%);
+            z-index: 0;
+        }
+
+        .abhiraj-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -10%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 153, 51, 0.15) 0%, rgba(255, 153, 51, 0) 70%);
+            z-index: 0;
+        }
+
+        .abhiraj-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .abhiraj-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .abhiraj-subtitle {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 1.75rem;
+            background-color: var(--saffron);
+            color: var(--light);
+            text-decoration: none;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 153, 51, 0.3);
+        }
+
+        .btn i {
+            margin-right: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            background-color: var(--saffron-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 153, 51, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            box-shadow: none;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.15);
+        }
+
+        .back-home {
+            position: fixed !important;
+            top: 20px !important;
+            left: 20px !important;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+            color: var(--saffron) !important;
+            border: 2px solid rgba(255, 153, 51, 0.3) !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+            transition: all 0.3s ease;
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: flex-start !important;
+            gap: 8px;
+            white-space: nowrap;
+            padding: 0.6rem 1rem !important;
+            font-size: 0.9rem !important;
+            overflow: visible !important;
+            border-radius: 8px !important;
+            font-weight: 500 !important;
+            text-decoration: none !important;
+        }
+
+        .back-home:hover {
+            background: white !important;
+            color: var(--saffron-dark) !important;
+            border-color: var(--saffron) !important;
+            transform: translateX(-3px) !important;
+            box-shadow: 0 6px 16px rgba(255, 153, 51, 0.3) !important;
+            text-decoration: none !important;
+        }
+
+        /* Content Section */
+        .abhiraj-content {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 2rem auto;
+            box-shadow: var(--shadow);
+            text-align: left;
+            max-width: 1200px;
+        }
+
+        .abhiraj-content h2 {
+            color: var(--saffron-dark);
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+
+        .abhiraj-content h3 {
+            color: var(--saffron);
+            margin: 2rem 0 1rem;
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--saffron-light);
+            padding-bottom: 0.5rem;
+        }
+
+        .abhiraj-content p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .abhiraj-content ul,
+        .abhiraj-content ol {
+            color: var(--gray);
+            margin: 1.5rem 0 1.5rem 2rem;
+            line-height: 1.6;
+        }
+
+        .abhiraj-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: var(--saffron-light);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 153, 51, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 153, 51, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--saffron);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: var(--saffron-dark);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            border-bottom: none;
+            padding: 0;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+            text-align: center;
+        }
+
+        /* Screenshot Grid - FIXED VERSION */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .screenshot-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            background: var(--saffron-light);
+            padding: 0.5rem;
+            position: relative;
+            height: auto;
+            /* Let height adjust naturally */
+        }
+
+        .screenshot-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 153, 51, 0.2);
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            /* Only width is fixed */
+            height: auto;
+            /* Height adjusts automatically */
+            display: block;
+            border-radius: 12px;
+            transition: var(--transition);
+            max-width: 100%;
+            /* Ensure it doesn't overflow */
+        }
+
+        .screenshot-item::after {
+            content: attr(data-label);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            color: white;
+            padding: 2rem 1rem 1rem;
+            font-weight: 600;
+            font-size: 1rem;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: var(--transition);
+            border-radius: 0 0 12px 12px;
+        }
+
+        .screenshot-item:hover::after {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .screenshot-item:hover img {
+            transform: scale(1.02);
+        }
+
+        /* Download Section */
+        .download-section {
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(135deg, var(--saffron) 0%, #FF5722 100%);
+            color: white;
+            border-radius: 20px;
+            margin-top: 3rem;
+        }
+
+        .download-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .download-section p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+        }
+
+        .download-btn {
+            background-color: white;
+            color: var(--saffron);
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+        }
+
+        .download-btn:hover {
+            background-color: var(--saffron-light);
+            color: var(--saffron-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.4;
+        }
+
+        .float1 {
+            top: 15%;
+            right: 10%;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--saffron) 0%, #FFB366 100%);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation-delay: 0s;
+        }
+
+        .float2 {
+            bottom: 10%;
+            right: 20%;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #FFB366 0%, #FFE5CC 100%);
+            border-radius: 58% 42% 38% 62% / 42% 55% 45% 58%;
+            animation-delay: 1s;
+        }
+
+        .float3 {
+            top: 20%;
+            left: 10%;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--saffron-dark) 0%, var(--saffron) 100%);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(5deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        /* Category Sections */
+        .category-section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: var(--saffron-lighter);
+            border-radius: 15px;
+            border-left: 5px solid var(--saffron);
+        }
+
+        .tech-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .tech-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .tech-item i {
+            color: var(--saffron);
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 2px solid rgba(255, 153, 51, 0.2);
+        }
+
+        footer .container>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer p {
+            color: var(--gray);
+            margin: 0;
+        }
+
+        footer a {
+            color: var(--gray);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--saffron);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .abhiraj-title {
+                font-size: 3rem;
+            }
+
+            .abhiraj-container {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .abhiraj-title {
+                font-size: 2.5rem;
+            }
+
+            .abhiraj-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .abhiraj-content {
+                padding: 2rem;
+                margin: 1rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .screenshot-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .back-home {
+                position: relative;
+                top: auto;
+                left: auto;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .abhiraj-title {
+                font-size: 2rem;
+            }
+
+            .abhiraj-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .abhiraj-content {
+                padding: 1.5rem;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .download-section {
+                padding: 2rem;
+            }
+
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* REMOVED the fixed height for mobile screenshots */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" class="back-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+
+    <section class="abhiraj-hero">
+        <div class="floating-element float1"></div>
+        <div class="floating-element float2"></div>
+        <div class="floating-element float3"></div>
+
+        <div class="abhiraj-container">
+            <div class="hero-content">
+                <h1 class="abhiraj-title">Abhiraj's Portfolio & Dev Tools</h1>
+                <p class="abhiraj-subtitle">A comprehensive Flutter app showcasing projects, featuring powerful
+                    developer tools, integrated web browser, and interactive games - all in one elegant package.</p>
+                <div class="hero-cta">
+                    <a href="../assests/Abhiraj's.apk" class="btn download-btn" download>
+                        <i class="fab fa-android"></i> Download APK
+                    </a>
+                    <a href="../index.html" class="btn btn-outline">
+                        <i class="fas fa-home"></i> Back to Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="abhiraj-content">
+        <div class="container">
+            <h2>About Abhiraj's Portfolio & Dev Tools</h2>
+            <p>A comprehensive Flutter portfolio app showcasing projects, featuring powerful developer tools
+                (Calculator, Unit Converter, Stopwatch, Timer, JSON/HTML/CSS/JS editors), an integrated web browser, and
+                interactive games - all in one elegant package.</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Portfolio Showcase</h3>
+                    <p>Stunning hero section with animated particle background, dynamic project display with Firebase
+                        Realtime Database integration, and offline-first architecture.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Developer Tools</h3>
+                    <p>Complete suite of productivity tools including Calculator, Unit Converter, Stopwatch, Timer,
+                        JSON/HTML/CSS/JS editors with syntax highlighting.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Interactive Games</h3>
+                    <p>No. Quests (number puzzles) and WordFinder (word search) games with custom splash screens,
+                        navigation, and dedicated home screens.</p>
+                </div>
+            </div>
+
+            <h2>Screenshots</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot-item" data-label="Home Screen">
+                    <img src="../assests/android/Abhiraj's/Home_Screen.jpg" alt="Home Screen" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="Login Screen">
+                    <img src="../assests/android/Abhiraj's/Login_Screen.jpg" alt="Login Screen" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="Profile Screen">
+                    <img src="../assests/android/Abhiraj's/Profile_Screen.jpg" alt="Profile Screen" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="Tools Screen">
+                    <img src="../assests/android/Abhiraj's/Tools_Screen.jpg" alt="Tools Screen" loading="lazy">
+                </div>
+                <div class="screenshot-item" data-label="Signup Screen">
+                    <img src="../assests/android/Abhiraj's/Signup_Screen.jpg" alt="Signup Screen" loading="lazy">
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h3>Portfolio Features</h3>
+                <ul>
+                    <li>Animated particle background with gradient effects</li>
+                    <li>Dynamic project display with Firebase Realtime Database integration</li>
+                    <li>Offline-first architecture with intelligent caching using SharedPreferences</li>
+                    <li>Smooth animations and professional saffron-themed design</li>
+                    <li>Direct contact integration via email and GitHub with clipboard fallback</li>
+                    <li>Floating "Get In Touch" button with smart visibility</li>
+                    <li>Settings dialog for customizable default tab selection</li>
+                </ul>
+            </div>
+
+            <div class="category-section">
+                <h3>Tools & Utilities</h3>
+
+                <h4>Calculator</h4>
+                <ul>
+                    <li>Professional scientific calculator with iPhone-style percentage functionality</li>
+                    <li>Real-time calculation with chain operations support</li>
+                    <li>History tracking with Hive local storage (last 100 calculations)</li>
+                    <li>Swipe-to-delete and copy-to-clipboard features</li>
+                    <li>Smart number formatting with scientific notation</li>
+                    <li>Haptic feedback for enhanced user experience</li>
+                </ul>
+
+                <h4>Unit Converter</h4>
+                <ul>
+                    <li>8 conversion categories: Length, Weight, Temperature, Area, Volume, Speed, Time, Data</li>
+                    <li>50+ units with accurate conversion formulas</li>
+                    <li>Real-time conversion as you type</li>
+                    <li>Swap button to reverse conversion direction</li>
+                    <li>Custom temperature formulas (Celsius, Fahrenheit, Kelvin)</li>
+                </ul>
+
+                <h4>Stopwatch & Timer</h4>
+                <ul>
+                    <li>High-precision timing with millisecond accuracy (30ms refresh rate)</li>
+                    <li>Lap recording with fastest/slowest lap indicators</li>
+                    <li>Countdown timer with circular progress indicator</li>
+                    <li>7 quick presets: 1m, 3m, 5m, 10m, 15m, 30m, 1h</li>
+                    <li>Completion alert with haptic feedback</li>
+                </ul>
+            </div>
+
+            <div class="category-section">
+                <h3>CS Developer Tools</h3>
+
+                <h4>JSON Editor & Viewer</h4>
+                <ul>
+                    <li>Dual-mode interface (Editor & Viewer tabs)</li>
+                    <li>Syntax highlighting with real-time validation</li>
+                    <li>Tree view visualization with expandable nodes</li>
+                    <li>Format, validate, copy/paste, and sample data features</li>
+                    <li>Color-coded values and detailed error messages</li>
+                </ul>
+
+                <h4>HTML/CSS/JS Editor</h4>
+                <ul>
+                    <li>CodePen-like web development environment</li>
+                    <li>Three separate editors (HTML, CSS, JS) with syntax highlighting</li>
+                    <li>Live WebView preview with real-time auto-update (800ms debounce)</li>
+                    <li>Resizable layout with draggable divider between editors and preview</li>
+                    <li>ZIP export functionality to Download/Abhiraj/ folder</li>
+                </ul>
+
+                <h4>Markdown Editor & Viewer</h4>
+                <ul>
+                    <li>Dual-mode interface (Editor & Viewer tabs)</li>
+                    <li>Syntax highlighting for markdown in editor</li>
+                    <li>Live preview with real-time rendering</li>
+                    <li>Support for headings, bold, italic, links, lists, blockquotes, code blocks</li>
+                    <li>Downloads to Download/Abhiraj/Markdown/ folder</li>
+                </ul>
+
+                <h4>MCS Syllabus</h4>
+                <ul>
+                    <li>Complete Master of Computer Science curriculum viewer</li>
+                    <li>Unified expandable interface: Courses → Semesters → Subjects → Units</li>
+                    <li>Rich topic details with definitions, explanations, examples, and key points</li>
+                    <li>Case studies with descriptions and images</li>
+                    <li>Offline-first with intelligent caching for instant loading</li>
+                </ul>
+            </div>
+
+            <div class="category-section">
+                <h3>Technical Highlights</h3>
+                <div class="tech-highlights">
+                    <div class="tech-item">
+                        <i class="fas fa-palette"></i>
+                        <span>Material Design 3 with custom saffron color scheme</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <span>Firebase Realtime Database integration</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Responsive design optimized for mobile devices</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-wifi-slash"></i>
+                        <span>Comprehensive offline support for all features</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-vibrate"></i>
+                        <span>Haptic feedback throughout for better UX</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Supabase authentication with email verification</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h2>Ready to Explore This All-in-One Toolkit?</h2>
+                <p>Abhiraj's Portfolio & Dev Tools combines professional portfolio showcase with powerful developer
+                    utilities, interactive games, and comprehensive productivity tools - all in one beautifully designed
+                    Flutter application.</p>
+                <a href="../assests/Abhiraj's.apk" class="btn download-btn" download>
+                    <i class="fab fa-android"></i> Download APK Now
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    File size: ~60 MB | Android 8.0+ | Built with Flutter
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <p>&copy; 2025 Abhiraj's Portfolio & Dev Tools. All rights reserved.</p>
+                <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+                    <a href="privacy-policy.html"
+                        style="color: #757575; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: color 0.3s;">
+                        <i class="fas fa-shield-alt"></i> Privacy
+                    </a>
+                    <a href="mailto:abhirajrathod90@gmail.com"
+                        style="color: #757575; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: color 0.3s;">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('load', function () {
+                    this.style.opacity = '1';
+                });
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+            });
+        });
+    </script>
+</body>
+
+</html>
